@@ -15,6 +15,7 @@ if args.IdExecution:
 def load(train_size=.8):
     """
     # Load the data
+    train_size(float): percent to divide de data in trani and validation
     """
       
     # the data, split between train and test sets
