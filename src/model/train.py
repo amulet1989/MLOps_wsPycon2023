@@ -44,6 +44,9 @@ def read(data_dir, split):
 
 
 def train(model, train_loader, valid_loader, config):
+    """
+    train model
+    """
     optimizer = getattr(torch.optim, config.optimizer)(model.parameters())
     model.train()
     example_ct = 0
