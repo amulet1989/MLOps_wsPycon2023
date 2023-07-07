@@ -22,9 +22,10 @@ else:
 # Device configuration
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("Device: ", device)
+print("This is my device")
 
 
-def read(data_dir: str, split: str):
+def read(data_dir, split):
     """
     Read data from a directory and return a TensorDataset object.
 
