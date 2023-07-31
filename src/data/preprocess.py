@@ -33,7 +33,7 @@ def preprocess(dataset, normalize=True, expand_dims=True):
     return TensorDataset(x, y)
 
 def preprocess_and_log(steps):
-
+    # run wandb
     with wandb.init(project="MLOps-Pycon2023",name=f"Preprocess Data ExecId-{args.IdExecution}", job_type="preprocess-data") as run:    
         processed_data = wandb.Artifact(
             "mnist-preprocess", type="dataset",
